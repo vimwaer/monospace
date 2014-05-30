@@ -1,0 +1,91 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+/* 
+
+Project Moonbase
+----------------
+A simple bootstrapped, isotoped theme for filtering posts.
+
+author: @derrybirkett
+
+----------
+*/
+/* Fonts */
+/* Typography */
+.smallcaps {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+h1 {
+  font-weight: 300;
+}
+li {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+/* Base */
+body {
+  background: #222;
+  padding-top: 90px;
+  font-family: 'Lato', sans-serif;
+}
+/* Navbar */
+.navbar a {
+  color: #ffffff;
+}
+.navbar .navbar-brand {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 48px;
+}
+.navbar li a {
+  line-height: 48px;
+}
+/* Footer */
+.footer {
+  background: #111;
+  height: 300px;
+}
+/* Content */
+.content {
+  color: white;
+  min-height: 500px;
+}
+/* Isotope */
+#isotope {
+  margin: 40px 0px;
+}
+#isotope .post {
+  min-height: 250px;
+  overflow: hidden;
+  padding-left: 0px;
+}
+#isotope .thumbnail {
+  padding: 0px;
+  background-color: #111;
+  border: 0px;
+}
+#isotope .thumbnail img {
+  width: 100%;
+}
+#isotope .thumbnail .caption {
+  color: white;
+  padding: 15px 30px;
+}
+#isotope .thumbnail .caption h3 {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+#isotope .thumbnail .caption p {
+  color: #999;
+}
+#isotope .item.w2 {
+  width: 50%;
+}

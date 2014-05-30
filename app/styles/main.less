@@ -1,0 +1,112 @@
+/* 
+
+Project Moonbase
+----------------
+A simple bootstrapped, isotoped theme for filtering posts.
+
+author: @derrybirkett
+
+----------
+*/
+
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+
+
+/* Typography */
+@baseline: 48px;
+
+.smallcaps {
+	text-transform:uppercase;
+	font-size:10px;
+	letter-spacing:2px;
+	font-weight:600;
+}
+
+
+h1 {
+	font-weight:300;
+}
+
+li {
+	.smallcaps;
+}
+
+/* Base */
+body {
+	background:#222;
+	padding-top: 90px;
+	font-family: 'Lato', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+	a { 
+		color:white 
+	}
+
+	.navbar-brand {
+		.smallcaps;	
+		line-height:@baseline;	
+	}
+
+	.navbar-toggle {
+		margin-top:22px;
+	}
+
+	li {
+		a {
+			line-height:@baseline;	
+		}
+	}
+
+}
+
+
+/* Content */
+.content {
+	color:white;
+	min-height:500px;
+}
+
+/* Footer */
+.footer {
+	background:#111;
+	height:300px;
+}
+
+/* Isotope */
+#isotope {
+
+	margin:40px 0px;
+
+	.post { 
+		overflow:hidden;
+		padding-left:0px;
+	}
+
+	.thumbnail {
+		padding:0px;
+		background-color:#111;
+		border:0px;
+		img {
+			width:100%;
+		}
+		.caption {
+			color:white;
+			padding:15px 30px;
+			h3 {			
+				.smallcaps;
+			}
+			p {
+				color:#999;
+			}
+			
+		}
+	}
+
+	.item.w2 { width: 50%; }
+}
+	
+
