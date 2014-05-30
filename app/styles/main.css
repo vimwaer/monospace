@@ -31,8 +31,13 @@ body {
   background: #222;
   padding-top: 90px;
   font-family: 'Lato', sans-serif;
+  background: url('../images/nightcity.jpg') top right no-repeat;
+  background-size: cover;
 }
 /* Navbar */
+.navbar {
+  border: none;
+}
 .navbar a {
   color: #ffffff;
 }
@@ -43,25 +48,37 @@ body {
   font-weight: 600;
   line-height: 48px;
 }
+.navbar .navbar-brand .logo {
+  background-image: url('../images/monospace_white.png');
+  height: 50px;
+  padding-left: 70px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  letter-spacing: 7px;
+  color: white;
+}
+.navbar .navbar-toggle {
+  margin-top: 22px;
+}
 .navbar li a {
   line-height: 48px;
-}
-/* Footer */
-.footer {
-  background: #111;
-  height: 300px;
 }
 /* Content */
 .content {
   color: white;
   min-height: 500px;
 }
+/* Footer */
+.footer {
+  background: #111;
+  height: 300px;
+}
 /* Isotope */
 #isotope {
   margin: 40px 0px;
 }
 #isotope .post {
-  min-height: 250px;
   overflow: hidden;
   padding-left: 0px;
 }
@@ -69,6 +86,7 @@ body {
   padding: 0px;
   background-color: #111;
   border: 0px;
+  border-radius: 0px;
 }
 #isotope .thumbnail img {
   width: 100%;

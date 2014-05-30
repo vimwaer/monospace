@@ -38,10 +38,14 @@ body {
 	background:#222;
 	padding-top: 90px;
 	font-family: 'Lato', sans-serif;
+	background:url('../images/nightcity.jpg') top right no-repeat;
+	background-size:cover;
 }
 
 /* Navbar */
 .navbar {
+	border:none;
+
 	a { 
 		color:white 
 	}
@@ -49,6 +53,15 @@ body {
 	.navbar-brand {
 		.smallcaps;	
 		line-height:@baseline;	
+		.logo {
+			background-image:url('../images/monospace_white.png');
+			height:50px;
+			padding-left:70px;
+			width:200px;
+			background-size:contain;
+			background-repeat:no-repeat;
+			letter-spacing:7px; color:white;
+		}
 	}
 
 	.navbar-toggle {
@@ -90,6 +103,7 @@ body {
 		padding:0px;
 		background-color:#111;
 		border:0px;
+		border-radius:0px;
 		img {
 			width:100%;
 		}
