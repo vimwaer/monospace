@@ -13,26 +13,28 @@ author: @derrybirkett
 /* Typography */
 .smallcaps {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 h1 {
-  font-weight: 300;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 li {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
 }
 /* Base */
 body {
   background: #222;
-  padding-top: 90px;
+  padding-top: 100px;
   font-family: 'Lato', sans-serif;
   background: url('../images/nightcity.jpg') top right no-repeat;
   background-size: cover;
+  font-weight: 300;
 }
 /* Navbar */
 .navbar {
@@ -43,7 +45,7 @@ body {
 }
 .navbar .navbar-brand {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
   line-height: 48px;
@@ -70,13 +72,9 @@ body {
   min-height: 500px;
 }
 /* Footer */
-.footer {
-  background: #111;
-  height: 300px;
-}
 /* Isotope */
 #isotope {
-  margin: 40px 0px;
+  margin: 50px 0px;
 }
 #isotope .post {
   overflow: hidden;
@@ -84,7 +82,7 @@ body {
 }
 #isotope .thumbnail {
   padding: 0px;
-  background-color: #111;
+  background-color: #222;
   border: 0px;
   border-radius: 0px;
 }
@@ -97,9 +95,12 @@ body {
 }
 #isotope .thumbnail .caption h3 {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 2px;
   font-weight: 600;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 #isotope .thumbnail .caption p {
   color: #999;
