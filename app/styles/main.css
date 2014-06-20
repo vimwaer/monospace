@@ -14,7 +14,7 @@ author: @derrybirkett
 .smallcaps {
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
 }
 h1 {
@@ -24,7 +24,7 @@ h1 {
 li {
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
 }
 /* Base */
@@ -38,6 +38,12 @@ body {
 }
 a {
   color: #68c39f;
+}
+a:hover {
+  color: #68c39f;
+}
+nav > li > a {
+  color: white;
 }
 /* Styles */
 .base {
@@ -75,13 +81,10 @@ a {
   background: #151515;
   border: none;
 }
-.navbar a {
-  color: #ffffff;
-}
 .navbar .navbar-brand {
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
   line-height: 48px;
 }
@@ -156,7 +159,7 @@ a {
 #isotope .thumbnail .caption h3 {
   text-transform: uppercase;
   font-size: 11px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-weight: 600;
   margin-top: 10px;
   margin-bottom: 5px;
