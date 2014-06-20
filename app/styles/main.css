@@ -27,6 +27,11 @@ li {
   letter-spacing: 1px;
   font-weight: 600;
 }
+p.intro {
+  font-size: 36px;
+  line-height: 38px;
+  letter-spacing: 0px;
+}
 /* Base */
 body {
   background: #222;
@@ -80,6 +85,7 @@ nav > li > a {
 .navbar {
   background: #151515;
   border: none;
+  margin-bottom: 40px;
 }
 .navbar .navbar-brand {
   text-transform: uppercase;
