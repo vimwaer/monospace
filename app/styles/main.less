@@ -1,13 +1,18 @@
 /* 
 
-Project Moonbase
+Project Monospace
 ----------------
 A simple bootstrapped, isotoped theme for filtering posts.
-
 author: @derrybirkett
 
 ----------
 */
+
+
+/* Palette  */
+@base:		#151515;
+@primary:	#68C39F; //green
+@secondary:	#EB5055; //red
 
 
 /* Fonts */
@@ -44,8 +49,48 @@ body {
 	font-weight:300;
 }
 
+a {
+	color:@primary;
+}
+
+/* Styles */
+.base {
+	background:@base; 
+	color:white;
+}
+
+.primary {
+	background:@primary;
+	color:@base;
+}
+
+.btn-dark {
+	.base;
+	a {
+		color:white;
+		&:hover {
+			.primary;
+		}
+	}
+}
+
+/* Components */
+.logo {
+	background-image:url('../images/monospace_white.svg');
+	background-size:contain;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:50px; 
+
+	&.small {
+		height:10px; 
+	}
+}
+
+
 /* Navbar */
 .navbar {
+	background:@base;
 	border:none;
 
 	a { 
@@ -56,12 +101,10 @@ body {
 		.smallcaps;	
 		line-height:@baseline;	
 		.logo {
-			background-image:url('../images/monospace_white.svg');
+			background-position:center left;
 			height:50px;
 			padding-left:70px;
 			width:200px;
-			background-size:contain;
-			background-repeat:no-repeat;
 			letter-spacing:7px; color:white;
 		}
 	}
@@ -76,6 +119,24 @@ body {
 		}
 	}
 
+
+	.dropdown {
+		&.open {
+			a.dropdown-toggle { background:@base; color:@primary; }
+		}
+		.dropdown-menu {
+			.base;
+			border:none;
+			padding:0px;
+			li {
+				a {
+					.btn-dark;
+					&:hover { .primary; }
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -83,6 +144,10 @@ body {
 .content {
 	color:white;
 	min-height:500px;
+}
+
+.category-title {
+	display:none;
 }
 
 /* Footer */
@@ -101,18 +166,17 @@ body {
 
 	.thumbnail {
 		padding:0px;
-		background-color:#222;
+		background-color:#fff;
 		border:0px;
 		border-radius:0px;
 		img {
 			width:100%;
 		}
 		.caption {
-			color:white;
 			padding:15px 30px;
 			h3 {			
 				.smallcaps;
-				font-weight:400;
+				font-weight:600;
 				margin-top:10px;
 				margin-bottom:5px;
 			}
@@ -126,4 +190,3 @@ body {
 	.item.w2 { width: 50%; }
 }
 	
-
