@@ -45,28 +45,14 @@ p.intro {
 	letter-spacing:0px;
 }
 
-/* Base */
-body {
-	background:#222;
-	padding-top: 100px;
-	font-family: 'Lato', sans-serif;
-	background:url('../images/bg.jpg') top right no-repeat;
-	background-size:cover;
-	font-weight:300;
+/* Colour Combos */
+.light {
+	background-color:white;
+	color:@base;
 }
 
-a {
-	color:@primary;
-	&:hover { color:@primary; }
-}
-
-nav>li>a {
-	color:white;
-}
-
-/* Styles */
-.base {
-	background:@base; 
+.dark {
+	background-color:@base;
 	color:white;
 }
 
@@ -75,12 +61,14 @@ nav>li>a {
 	color:@base;
 }
 
-.btn-dark {
-	.base;
-	a {
-		color:white;
-		&:hover {
-			.primary;
+.btn {
+	&.dark {
+		a {
+			color:white;
+			&:hover {
+				.primary;
+				font-weight:700;
+			}
 		}
 	}
 }
@@ -97,6 +85,33 @@ nav>li>a {
 		height:10px; 
 	}
 }
+
+/* Base */
+body {
+	background:#222;
+	padding-top: 100px;
+	font-family: 'Lato', sans-serif;
+	background:url('../images/bg.jpg') top right no-repeat;
+	background-size:100%;
+	font-weight:300;
+}
+
+a {
+	text-decoration:none !important;
+	color:@primary;
+	&:hover { 
+		color:lighten(@primary,15%); 
+		
+	}
+	transition: 0.2s;                                                                                                                              
+	-webkit-transition: 0.2s; /* Safari */ 
+}
+
+
+.navbar-inverse .navbar-nav>li>a, av>li>a {
+	color:white;
+}
+
 
 
 /* Navbar */
@@ -132,13 +147,16 @@ nav>li>a {
 			a.dropdown-toggle { background:@base; color:@primary; }
 		}
 		.dropdown-menu {
-			.base;
+			.dark;
 			border:none;
 			padding:0px;
 			li {
 				a {
-					.btn-dark;
-					&:hover { .primary; }
+					.btn.dark;
+					color:white;
+					&:hover { 
+						.primary; 
+					}
 				}
 			}
 		}
@@ -151,7 +169,7 @@ nav>li>a {
 .content {
 	color:white;
 	min-height:500px;
-	padding-top:20px;
+	margin-top:20px;
 }
 
 .category-title {
@@ -164,37 +182,35 @@ nav>li>a {
 
 /* Isotope */
 #isotope {
-
 	margin:50px 0px;
-
 	.post { 
 		overflow:hidden;
 		padding-left:0px;
 	}
-
-	.thumbnail {
-		padding:0px;
-		background-color:#fff;
-		border:0px;
-		border-radius:0px;
-		img {
-			width:100%;
-		}
-		.caption {
-			padding:15px 30px;
-			h3 {			
-				.smallcaps;
-				font-weight:600;
-				margin-top:10px;
-				margin-bottom:5px;
-			}
-			p {
-				color:#999;
-			}
-			
-		}
-	}
-
 	.item.w2 { width: 50%; }
 }
 	
+
+/* Panels */
+.thumbnail {
+	padding:0px;
+	border:0px;
+	border-radius:0px;
+	.light;
+	img {
+		width:100%;
+	}
+	.caption {
+		padding:15px 30px;
+		h3 {			
+			font-weight:300;
+			margin-top:10px;
+			margin-bottom:5px;
+			font-size:18px;
+		}
+		p {
+			color:#999;
+		}
+		
+	}
+}

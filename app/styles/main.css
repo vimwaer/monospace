@@ -32,43 +32,26 @@ p.intro {
   line-height: 38px;
   letter-spacing: 0px;
 }
-/* Base */
-body {
-  background: #222;
-  padding-top: 100px;
-  font-family: 'Lato', sans-serif;
-  background: url('../images/bg.jpg') top right no-repeat;
-  background-size: cover;
-  font-weight: 300;
+/* Colour Combos */
+.light {
+  background-color: white;
+  color: #151515;
 }
-a {
-  color: #68c39f;
-}
-a:hover {
-  color: #68c39f;
-}
-nav > li > a {
-  color: white;
-}
-/* Styles */
-.base {
-  background: #151515;
+.dark {
+  background-color: #151515;
   color: white;
 }
 .primary {
   background: #68c39f;
   color: #151515;
 }
-.btn-dark {
-  background: #151515;
+.btn.dark a {
   color: white;
 }
-.btn-dark a {
-  color: white;
-}
-.btn-dark a:hover {
+.btn.dark a:hover {
   background: #68c39f;
   color: #151515;
+  font-weight: 700;
 }
 /* Components */
 .logo {
@@ -81,11 +64,33 @@ nav > li > a {
 .logo.small {
   height: 10px;
 }
+/* Base */
+body {
+  background: #222;
+  padding-top: 100px;
+  font-family: 'Lato', sans-serif;
+  background: url('../images/bg.jpg') top right no-repeat;
+  background-size: 100%;
+  font-weight: 300;
+}
+a {
+  text-decoration: none !important;
+  color: #68c39f;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  /* Safari */
+}
+a:hover {
+  color: #9fd9c2;
+}
+.navbar-inverse .navbar-nav > li > a,
+av > li > a {
+  color: white;
+}
 /* Navbar */
 .navbar {
   background: #151515;
   border: none;
-  margin-bottom: 40px;
 }
 .navbar .navbar-brand {
   text-transform: uppercase;
@@ -113,13 +118,12 @@ nav > li > a {
   color: #68c39f;
 }
 .navbar .dropdown .dropdown-menu {
-  background: #151515;
+  background-color: #151515;
   color: white;
   border: none;
   padding: 0px;
 }
 .navbar .dropdown .dropdown-menu li a {
-  background: #151515;
   color: white;
 }
 .navbar .dropdown .dropdown-menu li a a {
@@ -128,6 +132,7 @@ nav > li > a {
 .navbar .dropdown .dropdown-menu li a a:hover {
   background: #68c39f;
   color: #151515;
+  font-weight: 700;
 }
 .navbar .dropdown .dropdown-menu li a:hover {
   background: #68c39f;
@@ -137,6 +142,7 @@ nav > li > a {
 .content {
   color: white;
   min-height: 500px;
+  margin-top: 20px;
 }
 .category-title {
   display: none;
@@ -150,29 +156,29 @@ nav > li > a {
   overflow: hidden;
   padding-left: 0px;
 }
-#isotope .thumbnail {
-  padding: 0px;
-  background-color: #fff;
-  border: 0px;
-  border-radius: 0px;
-}
-#isotope .thumbnail img {
-  width: 100%;
-}
-#isotope .thumbnail .caption {
-  padding: 15px 30px;
-}
-#isotope .thumbnail .caption h3 {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  margin-top: 10px;
-  margin-bottom: 5px;
-}
-#isotope .thumbnail .caption p {
-  color: #999;
-}
 #isotope .item.w2 {
   width: 50%;
+}
+/* Panels */
+.thumbnail {
+  padding: 0px;
+  border: 0px;
+  border-radius: 0px;
+  background-color: white;
+  color: #151515;
+}
+.thumbnail img {
+  width: 100%;
+}
+.thumbnail .caption {
+  padding: 15px 30px;
+}
+.thumbnail .caption h3 {
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+.thumbnail .caption p {
+  color: #999;
 }
