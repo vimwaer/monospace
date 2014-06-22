@@ -10,7 +10,7 @@ author: @derrybirkett
 
 
 /* Palette  */
-@base:		#151515;
+@base:		#252525;
 @primary:	#68C39F; //green
 @secondary:	#EB5055; //red
 
@@ -30,38 +30,64 @@ author: @derrybirkett
 }
 
 
-h1 {
-	font-weight:100;
-	letter-spacing:1px;
+h1, .h1 {
+	font-size:36px;
+	line-height:38px;
+	letter-spacing:0px;
+	font-weight:300;
 }
 
 li {
 	.smallcaps;
 }
 
-p.intro {
-	font-size:36px;
-	line-height:38px;
-	letter-spacing:0px;
+p {
+	font-size:16px;
+	font-weight:300;
 }
+
+p.intro {
+	.h1;
+}
+
+p.subtitle {
+	color:grey;
+}
+
+.centered { text-align:center;}
 
 /* Colour Combos */
 .light {
 	background-color:white;
 	color:@base;
+	h1,h2,h3,h4,h5,h6 {
+		color:@base; 
+		a { 
+			color:@base; 
+			&:hover { color:@primary }
+		}
+	}
 }
 
 .dark {
 	background-color:@base;
 	color:white;
+	h1,h2,h3,h4,h5,h6 {
+		color:white;
+		a { 
+			color:white;
+		}
+	}
 }
 
 .primary {
-	background:@primary;
+	background-color:@primary;
+	border-color:@primary;
 	color:@base;
 }
 
 .btn {
+	padding:10px;
 	&.dark {
 		a {
 			color:white;
@@ -70,6 +96,21 @@ p.intro {
 				font-weight:700;
 			}
 		}
+	}
+	&.primary {
+		.primary;
+		color:white;
+	}
+}
+
+.icon {
+	padding:10px;
+	&.outline {
+		border:1px solid;
+		border-radius:25px;
+	}
+	&:hover {
+		.primary;
 	}
 }
 
@@ -88,12 +129,16 @@ p.intro {
 
 /* Base */
 body {
-	background:#222;
 	padding-top: 100px;
 	font-family: 'Lato', sans-serif;
 	background:url('../images/bg.jpg') top right no-repeat;
 	background-size:100%;
+	background-color:darken(@base,0%);
 	font-weight:300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Lato', sans-serif;
 }
 
 a {
@@ -178,11 +223,14 @@ a {
 
 /* Footer */
 .footer {
+	text-align:center;
+	color:#444;
+	padding:50px;
 }
 
 /* Isotope */
 #isotope {
-	margin:50px 0px;
+	margin:20px 0px;
 	.post { 
 		overflow:hidden;
 		padding-left:0px;
@@ -196,21 +244,53 @@ a {
 	padding:0px;
 	border:0px;
 	border-radius:0px;
-	.light;
 	img {
 		width:100%;
 	}
 	.caption {
-		padding:15px 30px;
+		.light;
+		padding:20px 20px;
 		h3 {			
 			font-weight:300;
 			margin-top:10px;
-			margin-bottom:5px;
-			font-size:18px;
-		}
-		p {
-			color:#999;
+			margin-bottom:15px;
+			font-size:28px;
 		}
 		
+	}
+	ul.collections {
+		padding:0px; margin:0px;
+		li.label {
+			margin: 0;
+			position: absolute;
+			margin-top: -31px;
+			border-radius:0px;
+			.btn.primary;
+			padding:10px;
+			a {
+				color:white;
+			}
+		}
+	}
+}
+
+/* Welcome */
+.welcome {
+	.icon { margin-right:10px;}
+}
+
+/* Pagination */
+.pagination > li > a, .pagination > li > span {
+	background-color:transparent;
+	border:0px;
+	&:hover {
+		.primary;
+	}
+}
+
+/* Category */
+.category {
+	h1 {
+		margin-top:50px;
 	}
 }
