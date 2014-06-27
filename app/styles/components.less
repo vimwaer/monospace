@@ -1,0 +1,201 @@
+/*
+
+Monospace
+--------
+COMPONENTS
+
+by @derrybirkett
+*/
+
+/* Tags lists */
+ul.tags {
+	padding:0px; margin:0px;
+	list-style:none;
+	li {
+		border-right:2px solid @primary;
+		padding-right:8px;
+		margin:8px 0px;
+		.very-small-caps;
+		font-weight:300;
+	}
+}
+
+/* Components */
+.strip {
+	.primary;
+	min-height:80px;
+	line-height:80px;
+}
+
+.btn {
+	padding:10px;
+	&.dark {
+		a {
+			color:white;
+			&:hover {
+				.primary;
+				font-weight:700;
+			}
+		}
+	}
+	&.primary {
+		.primary;
+		color:white;
+	}
+}
+
+.icon {
+	padding:10px;
+	&.outline {
+		border:1px solid;
+		border-radius:25px;
+	}
+	&:hover {
+		.primary;
+	}
+}
+/* Simple Header */
+.simple-header {
+	margin-bottom:50px;
+	.logo { height:80px;  }
+}
+
+.logo {
+	background-image:url('../images/monospace_white.svg');
+	background-size:contain;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:50px; 
+
+	&.small {
+		height:10px; 
+	}
+}
+
+/* Navbar */
+.navbar-inverse .navbar-nav>li>a, av>li>a {
+	color:white;
+}
+
+.navbar {
+	margin-bottom:0px;
+	background:@base;
+	border:none;
+
+	.navbar-brand {
+		.smallcaps;	
+		font-weight:600;
+		line-height:@baseline;	
+		.logo {
+			background-position:center left;
+			height:50px;
+			padding-left:70px;
+			width:200px;
+			letter-spacing:7px; color:white;
+		}
+	}
+
+	.navbar-toggle {
+		margin-top:22px;
+	}
+
+	li {
+		a {
+			line-height:@baseline;	
+		}
+	}
+
+
+	.dropdown {
+		&.open {
+			a.dropdown-toggle { background:@base; color:@primary; }
+		}
+		.dropdown-menu {
+			.dark;
+			border:none;
+			padding:0px;
+			li {
+				a {
+					.btn.dark;
+					color:white;
+					&:hover { 
+						.primary; 
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+/* --------------------------------------------------
+Masthead 
+
+--------------------------------------------------*/
+.masthead {
+	height:490px;
+	
+	/* Background image settings */
+	background-size:100%;
+	background-position:center center;
+
+	/* Fix heights of contens to enable position bottom */
+	.container, .col { height:inherit }
+	
+	/* Position Elements Bottom */
+	.author, .post-header { position:absolute; bottom:50px;}
+
+	/* Special Tags position */
+	.right, .tags { text-align:right; float:right; }	
+}
+
+
+/* --------------------------------------------------
+Isotope 
+
+--------------------------------------------------*/
+#isotope {
+	margin:20px 0px;
+	.post { 
+		overflow:hidden;
+		padding-left:0px;
+	}
+	.item.w2 { width: 50%; }
+}
+	
+
+/* Panels */
+.thumbnail {
+	padding:0px;
+	border:0px;
+	border-radius:0px;
+	img {
+		width:100%;
+	}
+	.caption {
+		.light;
+		padding:20px 20px;
+		h3 {			
+			font-weight:300;
+			margin-top:10px;
+			margin-bottom:15px;
+			font-size:28px;
+		}
+		
+	}
+	ul.collections {
+		padding:0px; margin:0px;
+		li.label {
+			margin: 0;
+			position: absolute;
+			margin-top: -31px;
+			border-radius:0px;
+			.btn.primary;
+			padding:10px;
+			a {
+				color:white;
+			}
+		}
+	}
+}

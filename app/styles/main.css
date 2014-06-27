@@ -1,52 +1,21 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 /* 
 
-Project Monospace
+Monospace
 ----------------
-A simple bootstrapped, isotoped theme for filtering posts.
-author: @derrybirkett
+A gallery/portfolio/magazine style theme
 
+author: @derrybirkett
 ----------
 */
-/* Palette  */
-/* Fonts */
-/* Typography */
-.smallcaps {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-h1,
-.h1 {
-  font-size: 36px;
-  line-height: 38px;
-  letter-spacing: 0px;
-  font-weight: 300;
-}
-li {
-  text-transform: uppercase;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: 600;
-}
-p {
-  font-size: 16px;
-  font-weight: 300;
-}
-p.intro {
-  font-size: 36px;
-  line-height: 38px;
-  letter-spacing: 0px;
-  font-weight: 300;
-}
-p.subtitle {
-  color: grey;
-  font-style: italics;
-}
-.centered {
-  text-align: center;
-}
+/*
+
+Monospace
+---------
+
+Palette
+
+
+*/
 /* Colour Combos */
 .light {
   background-color: white;
@@ -101,6 +70,123 @@ p.subtitle {
   border-color: #68c39f;
   color: #252525;
 }
+/*
+
+Monospace
+---------
+TYPOGRAPHY
+
+by @derrybirkett
+
+*/
+/* Fonts */
+/* Typography */
+.subtitle {
+  color: grey;
+}
+.faded {
+  opacity: .5;
+}
+.centered {
+  text-align: center;
+}
+.smallcaps {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.very-small-caps {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 10px;
+}
+.bio {
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: -5px;
+  opacity: .5;
+}
+/* Styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'proxima-nova', sans-serif !important;
+}
+h1,
+.h1 {
+  font-size: 46px;
+  line-height: 52px;
+  letter-spacing: -1px;
+  font-weight: 200;
+}
+h2,
+.h2 {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  font-weight: 200;
+}
+h4,
+.h4 {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 10px;
+}
+.h4 {
+  opacity: .5;
+}
+li {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+/*
+
+Monospace
+--------
+COMPONENTS
+
+by @derrybirkett
+*/
+/* Tags lists */
+ul.tags {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+ul.tags li {
+  border-right: 2px solid #68c39f;
+  padding-right: 8px;
+  margin: 8px 0px;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 10px;
+  font-weight: 300;
+}
+/* Components */
+.strip {
+  background-color: #68c39f;
+  border-color: #68c39f;
+  color: #252525;
+  min-height: 80px;
+  line-height: 80px;
+}
 .btn {
   padding: 10px;
 }
@@ -132,7 +218,13 @@ p.subtitle {
   border-color: #68c39f;
   color: #252525;
 }
-/* Components */
+/* Simple Header */
+.simple-header {
+  margin-bottom: 50px;
+}
+.simple-header .logo {
+  height: 80px;
+}
 .logo {
   background-image: url('../images/monospace_white.svg');
   background-size: contain;
@@ -143,39 +235,13 @@ p.subtitle {
 .logo.small {
   height: 10px;
 }
-/* Base */
-body {
-  padding-top: 100px;
-  font-family: 'Lato', sans-serif;
-  background: url('../images/bg.jpg') top right no-repeat;
-  background-size: 100%;
-  background-color: #252525;
-  font-weight: 300;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', sans-serif;
-}
-a {
-  text-decoration: none !important;
-  color: #68c39f;
-  transition: 0.2s;
-  -webkit-transition: 0.2s;
-  /* Safari */
-}
-a:hover {
-  color: #9fd9c2;
-}
+/* Navbar */
 .navbar-inverse .navbar-nav > li > a,
 av > li > a {
   color: white;
 }
-/* Navbar */
 .navbar {
+  margin-bottom: 0px;
   background: #252525;
   border: none;
 }
@@ -183,6 +249,7 @@ av > li > a {
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 1px;
+  font-weight: 400;
   font-weight: 600;
   line-height: 48px;
 }
@@ -244,22 +311,37 @@ av > li > a {
   border-color: #68c39f;
   color: #252525;
 }
-/* Content */
-.content {
-  color: white;
-  min-height: 500px;
-  margin-top: 20px;
+/* --------------------------------------------------
+Masthead 
+
+--------------------------------------------------*/
+.masthead {
+  height: 490px;
+  /* Background image settings */
+  background-size: 100%;
+  background-position: center center;
+  /* Fix heights of contens to enable position bottom */
+  /* Position Elements Bottom */
+  /* Special Tags position */
 }
-.category-title {
-  display: none;
+.masthead .container,
+.masthead .col {
+  height: inherit;
 }
-/* Footer */
-.footer {
-  text-align: center;
-  color: #444;
-  padding: 50px;
+.masthead .author,
+.masthead .post-header {
+  position: absolute;
+  bottom: 50px;
 }
-/* Isotope */
+.masthead .right,
+.masthead .tags {
+  text-align: right;
+  float: right;
+}
+/* --------------------------------------------------
+Isotope 
+
+--------------------------------------------------*/
 #isotope {
   margin: 20px 0px;
 }
@@ -332,6 +414,47 @@ av > li > a {
 .thumbnail ul.collections li.label a {
   color: white;
 }
+/*
+
+Monospace
+--------
+BASE
+
+by @derrybirkett
+
+*/
+body {
+  padding-top: 80px;
+  background: url('../images/bg.jpg') top right no-repeat;
+  background-size: 100%;
+  background-color: #252525;
+  font-weight: 300;
+}
+a {
+  text-decoration: none !important;
+  color: #68c39f;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  /* Safari */
+}
+a:hover {
+  color: #9fd9c2;
+}
+/* Content */
+.content {
+  color: white;
+  min-height: 500px;
+  margin-top: 20px;
+}
+.category-title {
+  display: none;
+}
+/* Footer */
+.footer {
+  text-align: center;
+  color: #444;
+  padding: 50px;
+}
 /* Welcome */
 .welcome .icon {
   margin-right: 10px;
@@ -351,4 +474,22 @@ av > li > a {
 /* Category */
 .category h1 {
   margin-top: 50px;
+}
+/* ----------------------------------------------------
+SINGLE 
+
+---------------------------------------------------- */
+.post-content {
+  padding: 30px 0px;
+}
+.post-content p {
+  font-size: 18px;
+  line-height: 36px;
+  margin: 2em 0em;
+}
+.post-content p.lead {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0px;
+  font-weight: 200;
 }

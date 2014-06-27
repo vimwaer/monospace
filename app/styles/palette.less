@@ -1,0 +1,47 @@
+/*
+
+Monospace
+---------
+
+Palette
+
+
+*/
+
+
+@base:		#252525;
+@primary:	#68C39F; //green
+@secondary:	#EB5055; //red
+
+
+
+/* Colour Combos */
+.light {
+	background-color:white;
+	color:@base;
+	h1,h2,h3,h4,h5,h6 {
+		color:@base; 
+		a { 
+			color:@base; 
+			&:hover { color:@primary }
+		}
+	}
+}
+
+.dark {
+	background-color:@base;
+	color:white;
+	h1,h2,h3,h4,h5,h6 {
+		color:white;
+		a { 
+			color:white;
+		}
+	}
+}
+
+.primary {
+	background-color:@primary;
+	border-color:@primary;
+	color:@base;
+}
+
