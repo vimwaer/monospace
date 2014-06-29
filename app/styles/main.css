@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
 /* 
 
 Monospace
@@ -109,16 +109,6 @@ by @derrybirkett
   margin-right: 0px;
   padding-right: 0px;
 }
-/* Author */
-.author .authorname {
-  font-size: 20px;
-}
-.author .bio {
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: -5px;
-  opacity: .5;
-}
 /* Styles */
 body,
 h1,
@@ -158,9 +148,6 @@ h4,
   font-size: 9px;
   font-weight: 500;
 }
-.h4 {
-  opacity: .5;
-}
 li {
   text-transform: uppercase;
   font-size: 11px;
@@ -170,6 +157,13 @@ li {
 p {
   font-size: 16px;
   font-weight: 300;
+}
+/* Fontawesome */
+.fa {
+  margin-right: 0.5em;
+}
+.fa.fa-square {
+  color: #68c39f;
 }
 /*
 
@@ -187,6 +181,7 @@ p {
     Navbar
     Panels
     Isotope
+    Author
     ...
 
 */
@@ -273,7 +268,6 @@ p {
 ul.tags {
   padding: 0px;
   margin: 0px;
-  padding-top: 1em;
   list-style: none;
 }
 ul.tags li {
@@ -555,6 +549,22 @@ Isotope
   color: #444;
   padding: 50px;
 }
+/* Author */
+.author .avatar {
+  margin: 20px 0px;
+}
+.author .h4 {
+  opacity: 1;
+}
+.author .authorname {
+  font-size: 20px;
+}
+.author .bio {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: -5px;
+  opacity: .5;
+}
 /*
 
 Monospace
@@ -617,7 +627,7 @@ SINGLE
   margin-top: 1em;
 }
 .post-content {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .post-content p {
   font-size: 18px;
@@ -630,5 +640,5 @@ SINGLE
   line-height: 48px;
   letter-spacing: -1px;
   font-weight: 200;
-  font-weight: 300;
+  margin: 1em 0em;
 }

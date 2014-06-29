@@ -10,7 +10,7 @@ by @derrybirkett
 
 
 /* Fonts */
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
 
 
 /* Typography */
@@ -38,18 +38,6 @@ by @derrybirkett
 
 .last { margin-right:0px;padding-right:0px; }
 
-/* Author */
-.author {
-    .authorname {
-        font-size:20px;
-    }
-    .bio {
-        font-size:14px;
-        line-height:18px;
-        margin-top:-5px;
-        .faded;
-    }
-}
 
 
 
@@ -75,7 +63,6 @@ h2, .h2 {
 }
 
 h4, .h4 { .very-small-caps; }
-.h4 { .faded }
 
 li {
 	.smallcaps;
@@ -86,3 +73,10 @@ p {
 	font-weight:300;
 }
 
+/* Fontawesome */
+.fa {
+    margin-right:0.5em;
+    &.fa-square {
+        color:@primary;
+    }
+}
