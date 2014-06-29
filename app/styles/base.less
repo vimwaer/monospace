@@ -11,7 +11,7 @@ by @derrybirkett
 
 body {
 	padding-top: 80px;
-	background:url('../images/bg.jpg') top right no-repeat;
+	background:url('../images/bg.jpg') top right no-repeat fixed;
 	background-size:100%;
 	background-color:darken(@base,0%);
 	font-weight:300;
@@ -36,31 +36,7 @@ a {
 	margin-top:20px;
 }
 
-.category-title {
-	display:none;
-}
 
-/* Footer */
-.footer {
-	text-align:center;
-	color:#444;
-	padding:50px;
-}
-
-
-/* Welcome */
-.welcome {
-	.icon { margin-right:10px;}
-}
-
-/* Pagination */
-.pagination > li > a, .pagination > li > span {
-	background-color:transparent;
-	border:0px;
-	&:hover {
-		.primary;
-	}
-}
 
 /* Category */
 .category {
@@ -75,14 +51,39 @@ a {
 SINGLE 
 
 ---------------------------------------------------- */
+.post-header {
+
+    /* Category title & description */
+    h4 {
+        margin-bottom:0.5em;
+    }
+    .subtitle {
+        font-size:14px;
+    }
+
+    /* Entry title */
+    h1 {
+        font-family:"Lato" !important;
+        font-size:58px;
+        line-height:1.1em;
+        font-weight:100;
+    }
+    .abstract {
+        font-size:18px;
+        font-weight:200;
+        margin-top:1em;
+    }
+}
+
 .post-content {
-	padding:30px 0px;
+	padding-top:30px;
 	p {
 		font-size:18px;
 		line-height:36px;
 		margin:2em 0em;
 		&.lead {
 			.h2;
+            font-weight:300;
 		}
 	}
 }

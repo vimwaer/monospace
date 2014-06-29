@@ -1,13 +1,108 @@
 /*
 
-Monospace
---------
-COMPONENTS
+    Monospace
+    --------
+    COMPONENTS
+    by @derrybirkett
 
-by @derrybirkett
+
+    C O N T E N T S
+    ----------------
+    010 Welcome Block
+    Pagination
+    Tags
+    Navbar
+    Panels
+    Isotope
+    ...
+
 */
 
-/* Tags lists */
+
+
+/* -----------------------------------------------
+    010 Welcome 
+
+
+------------------------------------------------- */
+    .welcome {
+        margin:50px 0px;
+        .icon { margin-right:10px;}
+        .h2 {
+            line-height:1em;
+            font-size:48px;
+        }
+    }
+
+
+/* -----------------------------------------------
+    00 List style 
+
+
+------------------------------------------------- */
+
+    .liststyle {
+        .category {
+            h2 {
+                margin-bottom:0px;
+                font-size:48px;
+            }
+            .category-title {
+                display:none;
+            }
+            .subtitle {
+                color:#999;
+            }
+        }
+        .featured-image { 
+                height:350px; 
+                background-position:center center;
+                background-size:100%;
+        }
+        .description {
+            padding-right:2em;
+            h3 {
+                font-weight: 100;
+                font-size: 32px;
+                line-height: 1.3em;
+                margin:0.8em 0em 0.5em;
+                a {
+                    color: white;
+                }
+            }
+            p { 
+                font-size:14px;
+                line-height:24px;
+                letter-spacing: 0.5px;
+                &.more-link {
+                    margin-top:1.5em;
+                }
+            }
+        }
+        .row { 
+                margin-bottom:80px;
+                margin-top:30px;
+            }
+    }
+
+/* -----------------------------------------------
+    Pagination
+     
+
+------------------------------------------------- */
+.pagination > li > a, .pagination > li > span {
+	background-color:transparent;
+	border:0px;
+	&:hover {
+		.primary;
+	}
+}
+
+/* -----------------------------------------------
+    Tags
+     
+
+------------------------------------------------- */
 ul.tags {
 	padding:0px; margin:0px;
 	list-style:none;
@@ -20,13 +115,22 @@ ul.tags {
 	}
 }
 
-/* Components */
+/* -----------------------------------------------
+    Strip
+     
+
+------------------------------------------------- */
 .strip {
 	.primary;
 	min-height:80px;
 	line-height:80px;
 }
 
+/* -----------------------------------------------
+    Buttons
+     
+
+------------------------------------------------- */
 .btn {
 	padding:10px;
 	&.dark {
@@ -54,12 +158,23 @@ ul.tags {
 		.primary;
 	}
 }
-/* Simple Header */
+
+/* -----------------------------------------------
+    Header
+     
+
+------------------------------------------------- */
 .simple-header {
 	margin-bottom:50px;
 	.logo { height:80px;  }
 }
 
+
+/* -----------------------------------------------
+    Logo
+     
+
+------------------------------------------------- */
 .logo {
 	background-image:url('../images/monospace_white.svg');
 	background-size:contain;
@@ -72,7 +187,11 @@ ul.tags {
 	}
 }
 
-/* Navbar */
+/* -----------------------------------------------
+    Navbar
+     
+
+------------------------------------------------- */
 .navbar-inverse .navbar-nav>li>a, av>li>a {
 	color:white;
 }
@@ -165,7 +284,11 @@ Isotope
 }
 	
 
-/* Panels */
+/* -----------------------------------------------
+    Panels
+     
+
+------------------------------------------------- */
 .thumbnail {
 	padding:0px;
 	border:0px;
@@ -198,4 +321,12 @@ Isotope
 			}
 		}
 	}
+}
+
+
+/* Footer */
+.footer {
+	text-align:center;
+	color:#444;
+	padding:50px;
 }

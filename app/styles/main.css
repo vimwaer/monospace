@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 /* 
 
 Monospace
@@ -82,7 +83,7 @@ by @derrybirkett
 /* Fonts */
 /* Typography */
 .subtitle {
-  color: grey;
+  color: #999;
 }
 .faded {
   opacity: .5;
@@ -101,10 +102,19 @@ by @derrybirkett
   font-size: 11px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: 500;
 }
-.bio {
-  font-size: 13px;
+.last {
+  margin-right: 0px;
+  padding-right: 0px;
+}
+/* Author */
+.author .authorname {
+  font-size: 20px;
+}
+.author .bio {
+  font-size: 14px;
   line-height: 18px;
   margin-top: -5px;
   opacity: .5;
@@ -116,13 +126,19 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
   font-family: 'proxima-nova', sans-serif !important;
 }
 h1,
 .h1 {
-  font-size: 46px;
-  line-height: 52px;
+  font-size: 48px;
+  line-height: 56px;
   letter-spacing: -1px;
   font-weight: 200;
 }
@@ -130,7 +146,7 @@ h2,
 .h2 {
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   font-weight: 200;
 }
 h4,
@@ -139,7 +155,8 @@ h4,
   font-size: 11px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: 500;
 }
 .h4 {
   opacity: .5;
@@ -156,16 +173,107 @@ p {
 }
 /*
 
-Monospace
---------
-COMPONENTS
+    Monospace
+    --------
+    COMPONENTS
+    by @derrybirkett
 
-by @derrybirkett
+
+    C O N T E N T S
+    ----------------
+    010 Welcome Block
+    Pagination
+    Tags
+    Navbar
+    Panels
+    Isotope
+    ...
+
 */
-/* Tags lists */
+/* -----------------------------------------------
+    010 Welcome 
+
+
+------------------------------------------------- */
+.welcome {
+  margin: 50px 0px;
+}
+.welcome .icon {
+  margin-right: 10px;
+}
+.welcome .h2 {
+  line-height: 1em;
+  font-size: 48px;
+}
+/* -----------------------------------------------
+    00 List style 
+
+
+------------------------------------------------- */
+.liststyle .category h2 {
+  margin-bottom: 0px;
+  font-size: 48px;
+}
+.liststyle .category .category-title {
+  display: none;
+}
+.liststyle .category .subtitle {
+  color: #999;
+}
+.liststyle .featured-image {
+  height: 350px;
+  background-position: center center;
+  background-size: 100%;
+}
+.liststyle .description {
+  padding-right: 2em;
+}
+.liststyle .description h3 {
+  font-weight: 100;
+  font-size: 32px;
+  line-height: 1.3em;
+  margin: 0.8em 0em 0.5em;
+}
+.liststyle .description h3 a {
+  color: white;
+}
+.liststyle .description p {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+.liststyle .description p.more-link {
+  margin-top: 1.5em;
+}
+.liststyle .row {
+  margin-bottom: 80px;
+  margin-top: 30px;
+}
+/* -----------------------------------------------
+    Pagination
+     
+
+------------------------------------------------- */
+.pagination > li > a,
+.pagination > li > span {
+  background-color: transparent;
+  border: 0px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+  background-color: #68c39f;
+  border-color: #68c39f;
+  color: #252525;
+}
+/* -----------------------------------------------
+    Tags
+     
+
+------------------------------------------------- */
 ul.tags {
   padding: 0px;
   margin: 0px;
+  padding-top: 1em;
   list-style: none;
 }
 ul.tags li {
@@ -176,10 +284,15 @@ ul.tags li {
   font-size: 11px;
   letter-spacing: 1px;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: 500;
   font-weight: 300;
 }
-/* Components */
+/* -----------------------------------------------
+    Strip
+     
+
+------------------------------------------------- */
 .strip {
   background-color: #68c39f;
   border-color: #68c39f;
@@ -187,6 +300,11 @@ ul.tags li {
   min-height: 80px;
   line-height: 80px;
 }
+/* -----------------------------------------------
+    Buttons
+     
+
+------------------------------------------------- */
 .btn {
   padding: 10px;
 }
@@ -218,13 +336,22 @@ ul.tags li {
   border-color: #68c39f;
   color: #252525;
 }
-/* Simple Header */
+/* -----------------------------------------------
+    Header
+     
+
+------------------------------------------------- */
 .simple-header {
   margin-bottom: 50px;
 }
 .simple-header .logo {
   height: 80px;
 }
+/* -----------------------------------------------
+    Logo
+     
+
+------------------------------------------------- */
 .logo {
   background-image: url('../images/monospace_white.svg');
   background-size: contain;
@@ -235,7 +362,11 @@ ul.tags li {
 .logo.small {
   height: 10px;
 }
-/* Navbar */
+/* -----------------------------------------------
+    Navbar
+     
+
+------------------------------------------------- */
 .navbar-inverse .navbar-nav > li > a,
 av > li > a {
   color: white;
@@ -352,7 +483,11 @@ Isotope
 #isotope .item.w2 {
   width: 50%;
 }
-/* Panels */
+/* -----------------------------------------------
+    Panels
+     
+
+------------------------------------------------- */
 .thumbnail {
   padding: 0px;
   border: 0px;
@@ -414,6 +549,12 @@ Isotope
 .thumbnail ul.collections li.label a {
   color: white;
 }
+/* Footer */
+.footer {
+  text-align: center;
+  color: #444;
+  padding: 50px;
+}
 /*
 
 Monospace
@@ -425,7 +566,7 @@ by @derrybirkett
 */
 body {
   padding-top: 80px;
-  background: url('../images/bg.jpg') top right no-repeat;
+  background: url('../images/bg.jpg') top right no-repeat fixed;
   background-size: 100%;
   background-color: #252525;
   font-weight: 300;
@@ -446,31 +587,6 @@ a:hover {
   min-height: 500px;
   margin-top: 20px;
 }
-.category-title {
-  display: none;
-}
-/* Footer */
-.footer {
-  text-align: center;
-  color: #444;
-  padding: 50px;
-}
-/* Welcome */
-.welcome .icon {
-  margin-right: 10px;
-}
-/* Pagination */
-.pagination > li > a,
-.pagination > li > span {
-  background-color: transparent;
-  border: 0px;
-}
-.pagination > li > a:hover,
-.pagination > li > span:hover {
-  background-color: #68c39f;
-  border-color: #68c39f;
-  color: #252525;
-}
 /* Category */
 .category h1 {
   margin-top: 50px;
@@ -479,8 +595,29 @@ a:hover {
 SINGLE 
 
 ---------------------------------------------------- */
+.post-header {
+  /* Category title & description */
+  /* Entry title */
+}
+.post-header h4 {
+  margin-bottom: 0.5em;
+}
+.post-header .subtitle {
+  font-size: 14px;
+}
+.post-header h1 {
+  font-family: "Lato" !important;
+  font-size: 58px;
+  line-height: 1.1em;
+  font-weight: 100;
+}
+.post-header .abstract {
+  font-size: 18px;
+  font-weight: 200;
+  margin-top: 1em;
+}
 .post-content {
-  padding: 30px 0px;
+  padding-top: 30px;
 }
 .post-content p {
   font-size: 18px;
@@ -488,8 +625,10 @@ SINGLE
   margin: 2em 0em;
 }
 .post-content p.lead {
+  font-family: 'proxima-nova', sans-serif !important;
   font-size: 36px;
   line-height: 48px;
-  letter-spacing: 0px;
+  letter-spacing: -1px;
   font-weight: 200;
+  font-weight: 300;
 }
