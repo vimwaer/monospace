@@ -76,57 +76,243 @@
 			<!-- Header -->
 			<div class="container">
 				<div class="col-md-2 col">
-					<aside class="author">
-                        <div class="avatar"><img src="http://www.gravatar.com/avatar/f91f1c251f9edb5dc82265e0e7f9f078.png"  class="img-circle" /></div>
-						<p class="h4 very-small-caps"><i class="fa fa-square"></i>About the author</p>
-						<p class="authorname">Derry Birkett</p>
-						<p class="bio">A superfamous supporter of all things intelligent.  Beleiver in God and other religious artefacts because they are pretty cool, innit?</p>
-					</aside>
+
+                    <!-- 
+                    
+                    Tabbed sidebar content component 
+                        Nav Tabs
+                        Content Tabs
+                    
+                    -->
+                        <footer class="author">
+
+                                <div class="tab-pane active" id="authoravatar">
+                                    <figure class="avatar"><img src="http://www.gravatar.com/avatar/f91f1c251f9edb5dc82265e0e7f9f078.png"  class="img-circle" /></figure>
+                                </div>
+
+                            <ul class="nav nav-pills" role="tablist">
+                              <li class="active"><a href="#authora" role="tab" data-toggle="tab"><i class="fa fa-square"></i>About the author</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <section class="tab-content">
+                              <article class="tab-pane active" id="authora">
+                                    <footer class="byline">Derry Birkett</footer>
+                                    <p class="bio">A superfamous supporter of all things intelligent.  Beleiver in God and other religious artefacts because they are pretty cool, innit?</p>
+                              </article>
+                              <article class="tab-pane" id="authorb">
+                                    <footer class="byline">Follow</footer>
+                                    <p class="bio">A superfamous supporter of all things intelligent.  Beleiver in God and other religious artefacts because they are pretty cool, innit?</p>
+                              </article>
+                            </section>
+                        </footer>
+
+
 				</div>
 				<div class="col-md-6 col-md-offset-1 col">
-					<header class="post-header">
-						<h4><i class="fa fa-square"></i>Cloud <span class="h4 faded">Collection</span></h4>
+					<header class="entry-header">
+						<h2 class="h4"><i class="fa fa-square"></i>Cloud <span class="h4 faded">Collection</span></h2>
 						<p class="subtitle">Working in the cloud is just really a great thing, I love it.</p>
 						<h1 class="entry-title">Creative Cloud and an Intelligent Future.</h1>
 						<p class="abstract">Life is too short for bad design, <a href="/">Follow Monospace</a> and let's make the world a much smarter place.</p>
 					</header>
 				</div>
 				<div class="col-md-3 last"> 
-					<div class="right">
+					<aside class="right">
 						<h4 class="h4"><i class="fa fa-square"></i>Tags</h4>
 						<ul class="tags">
-							<li>Adobe</li>
-							<li>Creative</li>
-							<li>Cloud</li>
+							<li><a href="">Adobe</a></li>
+							<li><a href="">Creative</a></li>
+							<li><a href="">Cloud</a></li>
 						</ul>
-					</div>
+					</aside>
 				</div>
 			</div>
 		</div>
 
 
 		<!-- Strip -->
-		<aside class="strip">
+		<aside class="follow strip">
 			<div class="container">
-				Sign up for the newsletter bub.
+                <div class="col-md-2">
+                    <div>Follow for updates:</div>
+                </div>
+
+                <div class="col-md-6 col-md-offset-1">
+                    <form>
+                        <input type="text" placeholder="Leave an email for updates" />
+                    </form>
+                </div>
+
+                <div class="col-md-2 col-md-offset-1">
+                    <span class="legend">Follow</span> 
+                    <a href="#twiitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#rss"><i class="fa fa-rss"></i></a>
+                </div>
 			</div>
 		</aside>
 		
 		<!-- Entry -->
-		<div class="light">
+		<section class="body light">
 			<div class="container">
-				<div class="col-md-2"></div>
-				<div class="post-content col-md-6 col-md-offset-1">
+
+                <!-- Sidebar left -->
+				<aside class="sidebar col-md-2">
+
+                    <!-- 
+                    
+                    Tabbed sidebar content component 
+                        Nav Tabs
+                        Content Tabs
+                    
+                    -->
+                        <ul class="nav nav-pills" role="tablist">
+                          <li class="active"><a href="#prev" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Previous</a></li>
+                          <li><a href="#next" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Next</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <section class="tab-content">
+                          <article class="tab-pane active" id="prev">
+                               <h1><a href="">How I learned to stop worrying and love Node.js</a></h1> 
+                               <footer class="byline">by <a href="">Derry Birkett</a></footer>
+                               <p>Working online with the cloud is just fipping fantastic. Really.</p>
+                          </article>
+                          <article class="tab-pane" id="next">
+                               <h1>What I bought with my pocket money this weekend.</h1> 
+                               <footer class="byline">by Simon & Garfunkel </footer>
+                               <p>This is not the first ice-cream I have eaten this season, I would be modest to say it is my third.</p>
+                          </article>
+                        </section>
+
+                <!-- Sponsor -->
+                <aside class="sponsor">
+                    <figure class="sponsored-image medium-banner" style="background-image:url('http://lorempixel.com/400/480/sports')"></figure>
+                    <p class="sponsor-caption">Sponsor</p>
+                </aside>
+
+
+                </aside>
+                <!-- /Sidebar left -->
+
+				<div class="entry-content col-md-6 col-md-offset-1">
 					<p class="lead">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. </p>
 					<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim</p>
 					<p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim</p>
+
+                    <!-- Sharing -->
+                    <aside class="shareme">
+                    
+                        <ul class="nav nav-pills" role="tablist">
+                          <li class="active"><a href="#sharing" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Why not share this beauty?</a></li>
+                          <li><a href="#following" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Next</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <section class="tab-content">
+                          <article class="tab-pane active social" id="sharing">
+                                <a href=""><i class="fa fa-twitter"></i></a>
+                                <a href=""><i class="fa fa-rss"></i></a>
+                                <a href=""><i class="fa fa-facebook"></i></a>
+                          </article>
+                          <article class="tab-pane" id="following">
+                               <p>This is not the first ice-cream I have eaten this season, I would be modest to say it is my third.</p>
+                          </article>
+                        </section>
+
+                    </aside>
+
+
 				</div>
+
+
+                <!-- Sidebar right -->
+				<aside class="sidebar col-md-2 col-md-offset-1">
+
+                    <!-- 
+                    
+                    Tabbed sidebar content component 
+                        Nav Tabs
+                        Content Tabs
+                    
+                    -->
+                        <ul class="nav nav-pills" role="tablist">
+                          <li class="active"><a href="#prev" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Previous</a></li>
+                          <li><a href="#next" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Next</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <section class="tab-content">
+                          <article class="tab-pane active" id="prev">
+                               <h1>How I learned to stop worrying and love Node.js</h1> 
+                               <footer class="byline">by Derry Birkett</footer>
+                               <p>Working online with the cloud is just fipping fantastic. Really.</p>
+                          </article>
+                          <article class="tab-pane" id="next">
+                               <h1>What I bought with my pocket money this weekend.</h1> 
+                               <footer class="byline">by Simon & Garfunkel </footer>
+                               <p>This is not the first ice-cream I have eaten this season, I would be modest to say it is my third.</p>
+                          </article>
+                        </section>
+
+
+
+                    <!-- 
+                    
+                    Tabbed sidebar content component 
+                        Nav Tabs
+                        Content Tabs
+                    
+                    -->
+                        <ul class="nav nav-pills" role="tablist">
+                          <li><a href="#cloud" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Cloud</a></li>
+                          <li class="active"><a href="#dev" role="tab" data-toggle="tab"><i class="fa fa-square"></i>Dev</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <section class="tab-content">
+                          <article class="tab-pane" id="cloud">
+                               <h1>How I learned to stop worrying and love Node.js</h1> 
+                               <footer class="byline">by Derry Birkett</footer>
+                               <p>Working online with the cloud is just fipping fantastic. Really.</p>
+                          </article>
+                          <article class="tab-pane active" id="dev">
+                                <figure class="featured-image" style="background-image:url('http://lorempixel.com/400/480/people');"></figure>
+                               <h1>What I bought with my pocket money this weekend.</h1> 
+                               <footer class="byline">by Simon & Garfunkel </footer>
+                               <p>This is not the first ice-cream I have eaten this season, I would be modest to say it is my third.</p>
+                          </article>
+
+                </aside>
+                <!-- /Sidebar right -->
 			</div>
-		</div>
+		</section>
 
 	</article>
 	<!-- /Content -->
 
+    <!-- Strip -->
+    <aside class="follow strip">
+        <div class="container">
+            <div class="col-md-2">
+                <div>Follow for updates:</div>
+            </div>
+
+            <div class="col-md-6 col-md-offset-1">
+                <form>
+                    <input type="text" placeholder="Leave an email for updates" />
+                </form>
+            </div>
+
+            <div class="col-md-2 col-md-offset-1">
+                <span class="legend">Follow</span> 
+                <a href="#twiitter"><i class="fa fa-twitter"></i></a>
+                <a href="#rss"><i class="fa fa-rss"></i></a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Footer -->
     <div class="footer">
 	<div class="container">
 		Copyright © 2014	

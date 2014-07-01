@@ -13,11 +13,16 @@ Palette
 @primary:	#68C39F; //green
 @secondary:	#EB5055; //red
 
+/* Shades */
+@mid:       lighten(@base,25%);
+@light:     lighten(@base,50%);
+@lighter:     lighten(@base,70%);
 
 
 /* Colour Combos */
 .light {
 	background-color:white;
+    border-color:white;
 	color:@base;
 	h1,h2,h3,h4,h5,h6 {
 		color:@base; 

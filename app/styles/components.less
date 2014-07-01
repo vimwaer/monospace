@@ -149,14 +149,21 @@ ul.tags {
 	}
 }
 
+
+/* For ICONS */
 .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
 	padding:10px;
+
+    /* Add an outline */
+
 	&.outline {
-		border:1px solid;
-		border-radius:25px;
-	}
-	&:hover {
-		.primary;
+        border: 1px solid;
+        border-radius: 25px;
+        padding: 15px;
 	}
 }
 
@@ -264,10 +271,19 @@ Masthead
 	.container, .col { height:inherit }
 	
 	/* Position Elements Bottom */
-	.author, .post-header { position:absolute; bottom:50px;}
+	.author, .entry-header { position:absolute; bottom:50px;}
 
 	/* Special Tags position */
-	.right, .tags { text-align:right; float:right; }	
+	.right, .tags { 
+            text-align:right; 
+            float:right; 
+            a {
+                color:white;
+                &:hover {
+                    color:@primary;
+                }
+            }
+    }	
 }
 
 
@@ -284,6 +300,7 @@ Isotope
 	.item.w2 { width: 50%; }
 }
 	
+
 
 /* -----------------------------------------------
     Panels
@@ -340,11 +357,18 @@ Isotope
         margin:20px 0px;
     }
 
+    .tab-content {
+        .tab-pane {
+            margin-bottom:0px;
+        }
+    }
+
     .h4 {
         opacity:1;
     }
-    .authorname {
+    .byline {
         font-size:20px;
+        margin: 0.5em 0em 0.5em;
     }
     .bio {
         font-size:14px;
@@ -353,3 +377,130 @@ Isotope
         .faded;
     }
 }
+
+
+/* -----------------------------------------------
+    00 Sponsor 
+
+
+------------------------------------------------- */
+
+    .sponsor {
+           .medium-banner {
+                height:100px;   
+                width:auto;
+           }
+
+           p { 
+               .very-small-caps;
+                margin:1em 0em;
+            }
+    }
+
+
+
+/* -----------------------------------------------
+    00 STRIP 
+    Single row for various uses
+
+        00 Newsletter
+        
+------------------------------------------------- */
+
+    .strip {
+        .smallcaps;
+        color:white;
+        letter-spacing:normal;
+
+        form {
+            input {
+                background: none;
+                border: 1px solid white;
+                border-radius: 50px;
+                max-height: 25px;
+                line-height: 25px;
+                padding: 25px;
+                color: white;
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+
+        .fa, .fa:hover {
+            .icon.outline;
+            color:white;
+            border-color:white;
+            margin-left:5px;
+        }
+
+    }
+
+
+/* -----------------------------------------------
+    00 SHARE 
+    Sharing box under each article, and wherever
+
+------------------------------------------------- */
+
+    .shareme {
+        border:1px solid @lighter;
+        padding:20px;
+        .social {
+            padding:10px 0px;
+             i {
+                .icon.outline;
+             }
+        }
+    }
+
+
+
+/* -----------------------------------------------
+    00 SIDEBAR 
+
+
+------------------------------------------------- */
+
+    .sidebar {
+        .tab-content {
+            .tab-pane {
+                /* Add spacing below the tabbed content panels */
+                margin-bottom:50px;
+            }   
+        }
+    }
+
+/* -----------------------------------------------
+    00 BOOTSTRAP OVERWRITES 
+        010 Pills
+
+------------------------------------------------- */
+
+   .nav-pills {
+        & > li {
+            a {
+                font-size:9px;
+                padding:0px;
+                margin-right:1em;
+                color:@light;
+                i,.fa { color:@light; }
+                &:hover { 
+                    background:none; 
+                    color:@primary;
+                }
+            }
+            &.active {
+                a {
+                    background:none;
+                    color:@primary;
+                    i,.fa { color:@primary; }
+                    &:hover { 
+                            color:@primary; 
+                            background:none; 
+                    }
+                }
+            }
+        }
+    }
+
+

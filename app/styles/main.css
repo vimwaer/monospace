@@ -17,9 +17,11 @@ Palette
 
 
 */
+/* Shades */
 /* Colour Combos */
 .light {
   background-color: white;
+  border-color: white;
   color: #252525;
 }
 .light h1,
@@ -164,6 +166,37 @@ p {
 }
 .fa.fa-square {
   color: #68c39f;
+}
+/* -----------------------------------------------
+    00 Sidebar 
+    Typographic styles for sidebars
+
+------------------------------------------------- */
+.sidebar {
+  /* Articles */
+}
+.sidebar h1 {
+  letter-spacing: normal;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  margin-top: 0.7em;
+  margin-bottom: 0.4em;
+}
+.sidebar .byline {
+  margin: 0em 0em 1em;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 9px;
+  font-weight: 500;
+  color: #a5a5a5;
+}
+.sidebar p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a5a5a5;
 }
 /*
 
@@ -318,17 +351,19 @@ ul.tags li {
   color: #252525;
   color: white;
 }
+/* For ICONS */
 .icon {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  text-align: center;
   padding: 10px;
+  /* Add an outline */
 }
 .icon.outline {
   border: 1px solid;
   border-radius: 25px;
-}
-.icon:hover {
-  background-color: #68c39f;
-  border-color: #68c39f;
-  color: #252525;
+  padding: 15px;
 }
 /* -----------------------------------------------
     Header
@@ -454,7 +489,7 @@ Masthead
   height: inherit;
 }
 .masthead .author,
-.masthead .post-header {
+.masthead .entry-header {
   position: absolute;
   bottom: 50px;
 }
@@ -462,6 +497,14 @@ Masthead
 .masthead .tags {
   text-align: right;
   float: right;
+}
+.masthead .right a,
+.masthead .tags a {
+  color: white;
+}
+.masthead .right a:hover,
+.masthead .tags a:hover {
+  color: #68c39f;
 }
 /* --------------------------------------------------
 Isotope 
@@ -492,6 +535,7 @@ Isotope
 }
 .thumbnail .caption {
   background-color: white;
+  border-color: white;
   color: #252525;
   padding: 20px 20px;
 }
@@ -553,17 +597,131 @@ Isotope
 .author .avatar {
   margin: 20px 0px;
 }
+.author .tab-content .tab-pane {
+  margin-bottom: 0px;
+}
 .author .h4 {
   opacity: 1;
 }
-.author .authorname {
+.author .byline {
   font-size: 20px;
+  margin: 0.5em 0em 0.5em;
 }
 .author .bio {
   font-size: 14px;
   line-height: 18px;
   margin-top: -5px;
   opacity: .5;
+}
+/* -----------------------------------------------
+    00 Sponsor 
+
+
+------------------------------------------------- */
+.sponsor .medium-banner {
+  height: 100px;
+  width: auto;
+}
+.sponsor p {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 9px;
+  font-weight: 500;
+  margin: 1em 0em;
+}
+/* -----------------------------------------------
+    00 STRIP 
+    Single row for various uses
+
+        00 Newsletter
+        
+------------------------------------------------- */
+.strip {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: normal;
+}
+.strip form input {
+  background: none;
+  border: 1px solid white;
+  border-radius: 50px;
+  max-height: 25px;
+  line-height: 25px;
+  padding: 25px;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+}
+.strip .fa,
+.strip .fa:hover {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 15px;
+  color: white;
+  border-color: white;
+  margin-left: 5px;
+}
+/* -----------------------------------------------
+    00 SHARE 
+    Sharing box under each article, and wherever
+
+------------------------------------------------- */
+.shareme {
+  border: 1px solid #d8d8d8;
+  padding: 20px;
+}
+.shareme .social {
+  padding: 10px 0px;
+}
+.shareme .social i {
+  border: 1px solid;
+  border-radius: 25px;
+  padding: 15px;
+}
+/* -----------------------------------------------
+    00 SIDEBAR 
+
+
+------------------------------------------------- */
+.sidebar .tab-content .tab-pane {
+  /* Add spacing below the tabbed content panels */
+  margin-bottom: 50px;
+}
+/* -----------------------------------------------
+    00 BOOTSTRAP OVERWRITES 
+        010 Pills
+
+------------------------------------------------- */
+.nav-pills > li a {
+  font-size: 9px;
+  padding: 0px;
+  margin-right: 1em;
+  color: #a5a5a5;
+}
+.nav-pills > li a i,
+.nav-pills > li a .fa {
+  color: #a5a5a5;
+}
+.nav-pills > li a:hover {
+  background: none;
+  color: #68c39f;
+}
+.nav-pills > li.active a {
+  background: none;
+  color: #68c39f;
+}
+.nav-pills > li.active a i,
+.nav-pills > li.active a .fa {
+  color: #68c39f;
+}
+.nav-pills > li.active a:hover {
+  color: #68c39f;
+  background: none;
 }
 /*
 
@@ -601,44 +759,69 @@ a:hover {
 .category h1 {
   margin-top: 50px;
 }
+/* -----------------------------------------------
+    010 Body Area 
+    i.e. between Header and Footer
+
+------------------------------------------------- */
+.body {
+  padding: 70px 0px;
+}
 /* ----------------------------------------------------
 SINGLE 
 
 ---------------------------------------------------- */
-.post-header {
+.entry-header {
   /* Category title & description */
   /* Entry title */
 }
-.post-header h4 {
+.entry-header h4 {
   margin-bottom: 0.5em;
 }
-.post-header .subtitle {
+.entry-header .subtitle {
   font-size: 14px;
 }
-.post-header h1 {
+.entry-header h1 {
   font-family: "Lato" !important;
   font-size: 58px;
   line-height: 1.1em;
   font-weight: 100;
 }
-.post-header .abstract {
+.entry-header .abstract {
   font-size: 18px;
   font-weight: 200;
   margin-top: 1em;
 }
-.post-content {
-  padding-top: 20px;
-}
-.post-content p {
+.entry-content p {
   font-size: 18px;
   line-height: 36px;
   margin: 2em 0em;
 }
-.post-content p.lead {
+.entry-content p.lead {
   font-family: 'proxima-nova', sans-serif !important;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: -1px;
   font-weight: 200;
-  margin: 1em 0em;
+  margin: 0em 0em 1em;
+  font-size: 32px;
+  line-height: 42px;
+  font-weight: 300;
+}
+/* -----------------------------------------------
+    00 Sidebars 
+
+
+------------------------------------------------- */
+.sidebar {
+  /* Put the sidebars slightly below the intro paragraph */
+  padding-top: 10px;
+  /* Featured images in the sidebar */
+}
+.sidebar .featured-image {
+  height: 70px;
+  width: auto;
+  background-size: 100%;
+  background-position: center center;
+  margin-top: 10px;
 }

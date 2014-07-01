@@ -47,11 +47,23 @@ a {
 
 
 
+/* -----------------------------------------------
+    010 Body Area 
+    i.e. between Header and Footer
+
+------------------------------------------------- */
+
+    .body {
+        padding:70px 0px;        
+    }
+
+
+
 /* ----------------------------------------------------
 SINGLE 
 
 ---------------------------------------------------- */
-.post-header {
+.entry-header {
 
     /* Category title & description */
     h4 {
@@ -75,16 +87,41 @@ SINGLE
     }
 }
 
-.post-content {
-	padding-top:20px;
+.entry-content {
 	p {
 		font-size:18px;
 		line-height:36px;
 		margin:2em 0em;
 		&.lead {
 			.h2;
-            margin:1em 0em;
+            margin:0em 0em 1em;
+            font-size:32px;
+            line-height:42px;
+            font-weight:300;
 		}
 	}
 }
+
+
+
+/* -----------------------------------------------
+    00 Sidebars 
+
+
+------------------------------------------------- */
+
+    .sidebar {
+        /* Put the sidebars slightly below the intro paragraph */
+        padding-top:10px;
+
+        /* Featured images in the sidebar */
+        .featured-image {
+            height:70px; 
+            width:auto;
+            background-size:100%;
+            background-position:center center;
+            margin-top:10px;
+        }
+
+    }
 

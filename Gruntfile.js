@@ -277,7 +277,7 @@ module.exports = function (grunt) {
                         'images/{,*/}*.webp',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/bootstrap/dist/fonts/*.*'
+                        'lib/bootstrap/dist/fonts/*.*'
                     ]
                 }]
             },
@@ -293,7 +293,7 @@ module.exports = function (grunt) {
         // Generates a custom Modernizr build that includes only the tests you
         // reference in your app
         modernizr: {
-            devFile: '<%= config.app %>/bower_components/modernizr/modernizr.js',
+            devFile: '<%= config.app %>/lib/modernizr/modernizr.js',
             outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
             files: [
                 '<%= config.dist %>/scripts/{,*/}*.js',
